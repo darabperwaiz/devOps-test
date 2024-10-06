@@ -6,5 +6,10 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Run Server') { 
+            steps {
+                bat 'node server.js'
+            }
+        }
     }
 }
